@@ -20,7 +20,7 @@ int main(){
 		printf("2 - Pausa do Pomodoro\n");
 		printf("3 - Descanso Maior 15 minutos\n");
 		printf("4 - Sair Pomodoro\n");
-		printf("Digite sua opção: ");
+		printf("Digite sua opÃ§Ã£o: ");
 	
 		scanf("%d", &menu);
 	
@@ -31,7 +31,7 @@ int main(){
 		
 	                for(int i = inicio_pomodoro; i > 0; i--){
 			            printf("%d minuto(s) restante(s) do pomodoro. \n", i);
-			            	sleep(10);
+			            	sleep(60);
 		                }
 		                printf("Tempo de pomodoro finalizado.\n \a");
 					break;
@@ -41,7 +41,7 @@ int main(){
 				
 					for(int i = pausa_pomodoro; i > 0; i--){
 						printf("%d minuto(s) restante(s) de pausa. \n", i);
-							sleep(10);
+							sleep(60);
 						}
 						printf("Tempo de pausa finalizado. \n \a");
 					break;
@@ -51,7 +51,7 @@ int main(){
 				
 					for(int i = descanso_maior; i > 0; i--){
 						printf("%d minuto(s) restante(s) de descanso maior. \n", i);
-							sleep(10);
+							sleep(60);
 					}
 						printf("Tempo de descanso de 15 minutos finalizado.\n \a");
 					break;
@@ -60,7 +60,7 @@ int main(){
 					break;
 
 			default: 
-				printf("Opção Invalida! \n");						
+				printf("OpÃ§Ã£o Invalida! \n");						
 		}
 	system("cls");
 	} while (menu != 4);
